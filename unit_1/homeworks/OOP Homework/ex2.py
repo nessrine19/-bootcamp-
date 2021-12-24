@@ -4,4 +4,4 @@ class vehicle :
         self.mileage=mileage
 
 my_car=vehicle(180,2000)
-print(my_car.max_speed,my_car.mileage)
+print("car speed :",my_car.max_speed,"\n","mileage :",my_car.mileage)
