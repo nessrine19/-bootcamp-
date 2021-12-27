@@ -1,11 +1,8 @@
-file=open("student_names.txt","r")
-lines_1=[0,1,2,3,4]
-for index,line in enumerate(file):
-    if (index in lines_1):
-        print(line)
-file=open("student_names.txt","r")
-lines_1=[5,6,7,8,9]
-for index,line in enumerate(file):
-    if (index in lines_1):
-        print(line)
-file.close()
+with open ("student_names.txt") as file :
+    student=file.read()
+    print(student)
+    list_names=student.splitlines()
+print(list_names)
+n=int(input("enter n :"))
+print(list_names[n:])
+print(list_names[:-n])
